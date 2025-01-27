@@ -1,3 +1,11 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -7,15 +15,18 @@ a {
     text-decoration: none;
     color: white;
 }
+
+/* nav and header*/
 .top-container {
     background-color: #1f2937;
     color: white;
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
 }
 
 .nav-container {
+    padding-top: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,11 +42,22 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .header-content {
     width: 340px;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    margin-bottom: 10px;
 }
 
 .header-img {
@@ -49,4 +71,79 @@ a {
     padding: 5px 20px;
     border: none;
     border-radius: 5px;
+}
+
+/*main content*/
+.main-content-container {
+    background-color: white;
+    padding-bottom: 100px;
+}
+.main-content-container h2 {
+    text-align: center;
+    margin: 30px;
+}
+.card-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.card {
+    width: 140px;
+}
+.image-border {
+    border: 3px solid #3882f6;
+    border-radius: 5px;
+    padding: 60px;
+    margin-bottom: 10px;
+}
+/*quote container */
+.quote-container {
+    background-color: #e5e7eb;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-container p {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+    width: 700px;
+    margin-top: 60px;
+}
+
+.author {
+    color: black;
+    font-weight: bold;
+    margin-left: 350px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.action-white-container {
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action-blue-container {
+    width: 80%;
+    background-color: #3882f6;
+    color: white;
+
+    /*padding only top and bottom*/
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-content {
+    background-color: #3882f6;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
 }
